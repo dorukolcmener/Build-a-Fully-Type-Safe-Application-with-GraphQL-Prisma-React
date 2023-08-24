@@ -1,4 +1,4 @@
-## Fullstack Typesafe Application <gql, ts, react>
+## Fullstack Type-Safe Application <gql, ts, react>
 
 Completed hands-on tutorial of fullstack application.
 
