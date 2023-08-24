@@ -1,0 +1,26 @@
+{
+  "name": "Node & PostgreSQL Dev Container",
+  "dockerComposeFile": "./docker-compose.yml",
+  "service": "node-app",
+  "workspaceFolder": "/workspace",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "ms-azuretools.vscode-docker",
+        "GitHub.copilot",
+        "Prisma.prisma"
+      ],
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/sh"
+      }
+    }
+  },
+
+  "forwardPorts": [3001, 3003, 5432],
+  // "postCreateCommand": "npm install",
+
+  "shutdownAction": "stopCompose"
+}

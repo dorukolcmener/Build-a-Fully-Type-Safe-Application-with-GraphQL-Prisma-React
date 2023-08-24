@@ -1,0 +1,15 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "cli-dev": "cd react-gql && yarn dev",
+    "server-dev": "cd gql-server && yarn dev",
+    "initialize": "npx prisma migrate dev && npx prisma db seed",
+    "dev": "concurrently --kill-others-on-fail \"yarn cli-dev\" \"yarn server-dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
