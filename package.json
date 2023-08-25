@@ -1,12 +1,15 @@
 {
   "name": "workspace",
   "version": "1.0.0",
-  "main": "index.js",
+  "workspaces": [
+    "react-gql",
+    "gql-server"
+  ],
   "license": "MIT",
   "scripts": {
-    "cli-dev": "cd react-gql && yarn dev",
-    "server-dev": "cd gql-server && yarn dev",
-    "initialize": "npx prisma migrate dev && npx prisma db seed",
+    "cli-dev": "npm run dev --workspace=react-gql",
+    "server-dev": "npm run dev --workspace=gql-server",
+    "initialize-db": "npm run initialize --workspace=gql-server",
     "dev": "concurrently --kill-others-on-fail \"yarn cli-dev\" \"yarn server-dev\""
   },
   "devDependencies": {

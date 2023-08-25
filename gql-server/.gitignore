@@ -1,3 +1,4 @@
 node_modules
 # Keep environment variables out of version control
-.env
+# .env intentionally commenting out because it is a course that runs on localhost
+./**/migrations

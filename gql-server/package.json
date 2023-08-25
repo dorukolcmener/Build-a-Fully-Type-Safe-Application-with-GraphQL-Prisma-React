@@ -6,7 +6,8 @@
     "typescript": "^5.1.6"
   },
   "scripts": {
-    "dev": "ts-node-dev src/index.ts"
+    "dev": "ts-node-dev src/index.ts",
+    "initialize": "npx prisma migrate dev && npx prisma db seed"
   },
   "prisma": {
     "seed": "ts-node-dev prisma/seed.ts"
