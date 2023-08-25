@@ -1,6 +1,7 @@
 {
   "name": "workspace",
   "version": "1.0.0",
+  "private": true,
   "workspaces": [
     "react-gql",
     "gql-server"

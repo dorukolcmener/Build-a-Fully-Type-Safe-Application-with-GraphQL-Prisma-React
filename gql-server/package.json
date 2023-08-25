@@ -1,4 +1,7 @@
 {
+  "name": "gql-server",
+  "version": "0.0.0",
+  "private": true,
   "devDependencies": {
     "@types/node": "^20.5.3",
     "prisma": "5.2.0",

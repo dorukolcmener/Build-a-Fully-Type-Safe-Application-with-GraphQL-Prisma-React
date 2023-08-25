@@ -20,7 +20,7 @@
   },
 
   "forwardPorts": [3001, 3003, 5432],
-  // "postCreateCommand": "npm install",
+  "postCreateCommand": "yarn",
 
   "shutdownAction": "stopCompose"
 }
