@@ -12,8 +12,8 @@ Completed hands-on tutorial of fullstack application.
 
 3- Initialize & seed db
 
-`npm run initialize-db`
+`yarn initialize-db`
 
 4- Start development
 
-`npm run dev`
+`yarn dev`
